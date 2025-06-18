@@ -1,13 +1,103 @@
 body {
-  background: #f4f1e9;
-  color: #333;
-  font-family: 'Courier New', Courier, monospace;
+  background: #f8f6f1;
+  color: #222;
+  font-family: 'Times New Roman', Times, serif;
   margin: 0;
   padding: 0;
 }
-header, footer { text-align: center; padding: 1em; }
-main { max-width: 600px; margin: 2em auto; padding: 1em; }
-img#polaroid { width: 100%; border: 4px solid #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.3); }
-p.hint { font-style: italic; margin-top: 0.5em; }
-#audio-log { display: none; margin-top: 2em; }
-button { display: block; margin: 1em auto; padding: 0.5em 1em; font-size: 1em; cursor: pointer; }
+header {
+  background: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+.subtitle {
+  font-style: italic;
+  font-size: 1.1em;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5em 0 0;
+  display: flex;
+  justify-content: center;
+}
+nav li {
+  margin: 0 1em;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+main {
+  max-width: 900px;
+  margin: 2em auto;
+  padding: 0 1em;
+}
+.featured {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 1.5em;
+}
+.featured img {
+  width: 100%;
+  margin-top: 1em;
+  border: 4px solid #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.articles article {
+  margin: 1.5em 0;
+}
+.articles h3 {
+  margin-bottom: 0.5em;
+}
+#video-newsreel {
+  margin: 2em 0;
+  text-align: center;
+}
+#video-newsreel video {
+  max-width: 100%;
+  height: auto;
+}
+.caption {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 0.5em;
+}
+#audio-log {
+  margin: 2em 0;
+}
+.note {
+  font-style: italic;
+  color: #555;
+  margin-top: 0.3em;
+}
+#reader-comments {
+  background: #eef;
+  padding: 1em;
+  margin: 2em 0;
+}
+.comment {
+  border-bottom: 1px dashed #ccc;
+  padding: 0.5em 0;
+}
+.comment:last-child {
+  border: none;
+}
+.reader-call {
+  background: #efefef;
+  padding: 1.5em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+button {
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  cursor: pointer;
+}
+footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 1em;
+}

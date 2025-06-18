@@ -2,36 +2,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>1970 Tower Ops</title>
+  <title>Aviation Weekly - 1970 Edition</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Interested parties call extension 309. -->
   <header>
-    <h1>Tower Control: Midnight Shift</h1>
-    <p>You stumble into the tower to clean. The runway lights blink in the twilight…</p>
+    <h1>Aviation Weekly</h1>
+    <p class="subtitle">Independent Reporting on Airspace & Infrastructure</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="flight-logs.html">Flight Logs</a></li>
+        <li><a href="weather.html">Weather Reports</a></li>
+        <li><a href="classifieds.html">Classifieds</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-    <section id="puzzle">
-      <h2>First Clue</h2>
-      <img id="polaroid" src="assets/polaroid.jpg" alt="Faded Polaroid of runway at dusk">
-      <p class="hint">The lights blink in Morse… what are they telling you?</p>
-      <button id="unlock-btn">Enter Code</button>
+    <section class="featured">
+      <h2>Unscheduled Aircraft Lands at Rural Strip</h2>
+      <p><strong>January 8, 1970</strong> – A lone Cessna 210 made an unexpected landing at Nordfield Airstrip just after dusk. Tower records show no permit issued. Locals report strange radio chatter.</p>
+      <img src="assets/polaroid.jpg" alt="Polaroid: runway at dusk">
+    </section>
+
+    <section class="articles">
+      <article>
+        <h3>Pilot Shortages Spark Midnight Flights</h3>
+        <p>With major airlines cutting night shifts, independent pilots are filling gaps—sometimes off the books. <a href="flight-logs.html">View leaked flight logs</a>.</p>
+      </article>
+      <article>
+        <h3>Weather Vane Flutters Lead to Radar Glitches</h3>
+        <p>Technicians note unusual wind-vane behavior interfering with radar readings. <a href="weather.html">See full report</a>.</p>
+      </article>
+      <article>
+        <h3>Clandestine Flight Manifests Reveal Morphine Cargo</h3>
+        <p>An anonymous source passed along manifest fragments—morphine labeled as “medical supplies.” Could this explain the unregistered landing?</p>
+      </article>
+    </section>
+
+    <section id="video-newsreel">
+      <h2>Newsreel Footage</h2>
+      <video controls>
+        <source src="assets/video/newsreel.mp4" type="video/mp4">
+        Your browser does not support embedded video.
+      </video>
+      <p class="caption">• CCTV footage captured by a local farmhand’s home camera.</p>
     </section>
 
     <section id="audio-log">
-      <h2>Audio Log</h2>
+      <h2>Intercepted Radio Log</h2>
       <audio controls>
         <source src="assets/audio/log1.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
+        Your browser does not support audio playback.
       </audio>
+      <p class="note">"…landing clearance, over…" Then static.</p>
+    </section>
+
+    <section id="reader-comments">
+      <h2>Reader Comments</h2>
+      <div class="comment">
+        <p><strong>@Skywatcher1970:</strong> Saw the plane land. Lights flickered strangely—like Morse code.</p>
+      </div>
+      <div class="comment">
+        <p><strong>@FarmhandJoe:</strong> Got blurry film of the landing. Anyone know how to decode the tape?</p>
+      </div>
+    </section>
+
+    <section class="reader-call">
+      <h2>Reader Tip Line</h2>
+      <p>If you have flight manifests or eyewitness accounts, <strong>write to us</strong>.</p>
+      <button onclick="alert('Mailbox full. Try again later.')">Send a Letter</button>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 1970 Tower Ops</p>
+    <p>&copy; 1970 Aviation Weekly | Distributed by Aether Syndicate</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
